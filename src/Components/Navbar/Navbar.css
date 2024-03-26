@@ -1,0 +1,20 @@
+.navbar {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: black;
+    font-weight: 400;
+}
+
+.links a span {
+    font-size: 20px;
+}

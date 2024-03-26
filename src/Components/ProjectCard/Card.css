@@ -1,0 +1,20 @@
+.product_card {
+    width: 45%;
+    height: auto;
+    /* padding: 10px; */
+    /* border: 2px solid rgb(45, 45, 45) */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.product_card:hover{
+    transform: scale(0.95);
+}
+.product_card img {
+    width: 100%;
+}
+.product_card p{
+    margin-top: 5px;
+}
