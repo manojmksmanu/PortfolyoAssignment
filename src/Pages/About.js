@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import UseContext from '../Context/UseContext'
 // import { motion } from "framer-motion";
 import { motion, AnimatePresence } from "framer-motion";
@@ -7,15 +7,19 @@ import Experience from '../Components/Experience/Experience';
 // import { FaInstagram } from "react-icons/fa6";
 const About = () => {
     const data = UseContext();
-    const [selectedTab, setSelectedTab] = useState('');
-    return (
-        <div className='about'>
-            <h1 className='pages_title'>About Me</h1>
-            {/* <h2>
-                Hello! I am {data && data.user.about.name} a {data && data.user.about.title}
-            </h2> */}
-            <div className='scroll_setting'>
+    const [selectedTab, setSelectedTab] = useState('Education');
 
+    return (
+        <motion.div
+            initial={{ opacity: 0, x: -50 }} // Initial state (invisible and moved up)
+            animate={{ opacity: 1, x: 0 }} // Animate to visible and original position
+            transition={{ duration: 1 }}
+            className='about'
+        >
+            <h1 className='pages_title'>About Me</h1>
+
+            <div className='scroll_setting'>
+                {/* ---About--  */}
                 <div>
                     <h3>
                         {data && data.user.about.subTitle}
@@ -39,7 +43,7 @@ const About = () => {
                         <div>
                             <p>Email Address</p>
                             <span>
-                                {data && data.user.about.phoneNumber}
+                                {data && data.user.email}
                             </span>
                         </div>
                         <div>
@@ -63,7 +67,7 @@ const About = () => {
 
                 {/* //for education and experience */}
                 <div>
-                    <div className="window">
+                    <div className="EandE_section">
                         <nav>
                             <ul>
                                 <li
@@ -83,23 +87,11 @@ const About = () => {
                                 >
                                     Experience
                                     {
-                                        'Experience'=== selectedTab ? (
+                                        'Experience' === selectedTab ? (
                                             <motion.div className="underline" layoutId="underline" />
                                         ) : null
                                     }
                                 </li>
-                                {/* {tabs.map((item) => (
-                                    <li
-                                        key={item.label}
-                                        className={item === selectedTab ? "selected" : ""}
-                                        onClick={() => setSelectedTab(item)}
-                                    >
-                                        {`${item.icon} ${item.label}`}
-                                        {item === selectedTab ? (
-                                            <motion.div className="underline" layoutId="underline" />
-                                        ) : null}
-                                    </li>
-                                ))} */}
                             </ul>
                         </nav>
                         <main>
@@ -111,7 +103,7 @@ const About = () => {
                                     exit={{ y: -10, opacity: 0 }}
                                     transition={{ duration: 0.2 }}
                                 >
-                                    {selectedTab === 'Experience' ? <Experience/> : <Education/>}
+                                    {selectedTab === 'Experience' ? <Experience /> : <Education />}
                                 </motion.div>
                             </AnimatePresence>
                         </main>
@@ -120,7 +112,7 @@ const About = () => {
 
             </div>
 
-        </div >
+        </motion.div >
     )
 }
 
