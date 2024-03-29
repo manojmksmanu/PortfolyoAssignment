@@ -43,17 +43,22 @@ const Navbar = () => {
     return (
         <>
             <div className="side_nav_page" ref={scope}>
-                <motion.div onClick={() => setOpen(!open)} whileTap={{ scale: 0.95 }}>
+                <motion.div
+                    initial={{ scale: 0 }} // Initial state (invisible and moved up)
+                    animate={{ scale: 1 }} // Animate to visible and original position
+                    transition={{ delay: 1, duration: 0.3 }}
+                    onClick={() => setOpen(!open)}
+                    whileTap={{ scale: 0.95 }}
+                >
                     <CgMenuRound className='menu' style={{ fontSize: "60px", color: 'white' }} />
                 </motion.div>
                 <ul className='side_nav_container'>
                     <motion.li>
                         <Link
-                            onClick={() => 
-                                {
-                                    setOpen(!open)
-                                    setActive('home')
-                                }
+                            onClick={() => {
+                                setOpen(!open)
+                                setActive('home')
+                            }
                             }
                             to={'/'}
                             className={active === 'home' ? ' active_nav ' : ""}

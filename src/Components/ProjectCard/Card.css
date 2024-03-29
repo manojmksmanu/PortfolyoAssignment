@@ -18,3 +18,8 @@
 .product_card p{
     margin-top: 5px;
 }
+.project_urls a{
+margin-left: 20px;
+text-decoration: none;
+color: grey;
+}

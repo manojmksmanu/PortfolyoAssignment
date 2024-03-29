@@ -25,7 +25,7 @@ const Home = () => {
                 }
             </h4>
             <h5>
-                " {
+                "{
                     data && data.user.about.quote
                 }"
             </h5>

@@ -1,56 +1,5 @@
-.projects {
-  width: 90%;
-  height: 100%;
-  margin-left: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* background-color: antiquewhite; */
-  position: relative;
-}
 
-.projects h1 {
-  margin-left: 25px;
-  text-transform: capitalize;
-  color: rgb(85, 85, 85);
-}
-
-.projects_cards_container {
-  /* background-color: blue; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  height: 70vh;
-  overflow-y: scroll;
-}
-
-.scroll_setting {
-  height: 70vh;
-  overflow-y: scroll;
-}
-
-.scroll_setting::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-.scroll_setting::-webkit-scrollbar-track {
-  background: white;
-}
-
-/* Handle */
-.scroll_setting::-webkit-scrollbar-thumb {
-  background: #56e2a4;
-  border-radius: 50px;
-}
-
-/* Handle on hover */
-.scroll_setting::-webkit-scrollbar-thumb:hover {
-  background: #00f788;
-  ;
-}
+/* ----Home -----  */
 
 /* ///home */
 .home {
@@ -111,21 +60,78 @@
   margin-top: -20px;
   font-size: 20px;
   margin-bottom: 30px;
+  color:#353c53 ;
 }
 
 .home h4 {
   font-size: 30px;
   font-weight: 300;
+  color:#353c53 ;
 }
 
 .home h5 {
   margin-top: 30px;
   font-size: 20px;
   font-weight: 500;
-  color: #56e2a4;
+  color:#353c53 ;
+}
+/* ----Home End---  */
+/* -----Peoject ---  */
+.projects {
+  width: 90%;
+  height: 100%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: antiquewhite; */
+  position: relative;
 }
 
-/* ////about page */
+.projects h1 {
+  margin-left: 25px;
+  text-transform: capitalize;
+  color: rgb(85, 85, 85);
+}
+
+.projects_cards_container {
+  /* background-color: blue; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.scroll_setting {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.scroll_setting::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.scroll_setting::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+.scroll_setting::-webkit-scrollbar-thumb {
+  background: #56e2a4;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+.scroll_setting::-webkit-scrollbar-thumb:hover {
+  background: #00f788;
+  ;
+}
+
+/* ----About---  */
 .about {
   display: flex;
   margin-left: 30px;
@@ -249,7 +255,7 @@ li {
   border-radius: 20px;
   background: #56e2a4;
 }
-
+/* ---About End--  */
 /* ---skills--- */
 .skills {
   display: flex;
@@ -311,7 +317,7 @@ li {
   border-radius: 30px;
   padding: 10px;
 }
-
+/* ----Skill End--  */
 /* -----services----  */
 .services {
   display: flex;
@@ -381,7 +387,7 @@ li {
   border-radius: 20px;
 
 }
-
+/* ---Service End--  */
 
 /* ------testimonials -----  */
 .testimonials {
@@ -474,7 +480,7 @@ li {
   font-size: 18px;
   margin-top: 10px;
 }
-
+/* ---Testimonial End ----  */
 /* ----contact---   */
 .contact {
   display: flex;
@@ -538,7 +544,7 @@ li {
   cursor: pointer;
 }
 
-
+/* ----Contact End---  */
 
 
 /* ----Responsive Design Css---  */
@@ -564,6 +570,18 @@ li {
 }
 
 @media screen and (max-width:990px) {
+
+  /* ----Home--- */
+  .home {
+    margin-left: 0px;
+  }
+
+  .home_circle {
+    height: 400px;
+    opacity: 0.2;
+  }
+
+  /* Home End */
 
   /* ---About-- */
   .about {
@@ -666,19 +684,20 @@ li {
     margin-left: 0px;
     padding: 0px;
   }
+
   .testimonial_container {
     width: 100%;
     height: 80vh;
   }
-  
+
   .testimonial_box {
     height: 80vh;
   }
-  
+
   .testimonial_img {
     width: 50%;
   }
-  
+
   /* ---Testimonial End---  */
 
   /* ---Contact---  */
