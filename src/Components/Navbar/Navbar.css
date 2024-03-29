@@ -1,21 +1,10 @@
-button {
-    padding: 12px 20px;
-    font-family: sofia-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    color: #030409;
-    border: none;
-    background-color: #56e2a4;
-    cursor: pointer;
-    border-radius: 8px;
-    width: 160px;
-}
+
 
 .menu {
     background-color: #56e2a4;
     border-radius: 100%;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .side_nav_page ul {

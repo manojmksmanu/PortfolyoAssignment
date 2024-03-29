@@ -1,6 +1,6 @@
 
 import './App.css';
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Home from './Pages/Home'
@@ -14,6 +14,7 @@ import Services from './Pages/Services';
 import Testimonials from './Pages/Testimonials';
 import Side_Nav from './Components/Side_Nav/Side_Nav';
 import Contact from './Pages/Contact';
+import Animated from './Components/AnimatedBg/Animated';
 function App() {
   const [activePage, setActivePage] = useState(localStorage.getItem('activePage') || '/');
 
@@ -30,7 +31,10 @@ function App() {
           <div className='navbar'>
             <Navbar />
           </div>
+          <div className='animation'>
 
+          <Animated />
+          </div>
           <div className='container'>
             <div className='side_conent_container_left'>
               <Hero />
@@ -45,7 +49,7 @@ function App() {
                 <Route path='/skills' element={<Skills />} />
                 <Route path='/services' element={<Services />} />
                 <Route path='/testimonials' element={<Testimonials />} />
-                <Route path='/contact' element={<Contact/>} />
+                <Route path='/contact' element={<Contact />} />
                 {/* Define a default route for the root path */}
                 <Route path='*' element={<Home />} />
               </Routes>
