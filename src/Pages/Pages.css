@@ -1,4 +1,3 @@
-
 /* ----Home -----  */
 
 /* ///home */
@@ -31,23 +30,6 @@
   animation-iteration-count: infinite;
 }
 
-@keyframes pop {
-  0% {
-    width: 200px;
-    height: 200px;
-  }
-
-  50% {
-    width: 500px;
-    height: 500px;
-  }
-
-  100% {
-    width: 200px;
-    height: 200px;
-  }
-}
-
 .home h1 {
   font-weight: 700;
   color: #56e2a4;
@@ -60,21 +42,53 @@
   margin-top: -20px;
   font-size: 20px;
   margin-bottom: 30px;
-  color:#353c53 ;
+  color: #353c53;
 }
 
 .home h4 {
   font-size: 30px;
   font-weight: 300;
-  color:#353c53 ;
+  color: #353c53;
 }
 
 .home h5 {
   margin-top: 30px;
   font-size: 20px;
   font-weight: 500;
-  color:#353c53 ;
+  color: #353c53;
 }
+
+.home_experience h2 {
+  font-size:80px;
+  color: #56e2a4;
+  font-weight: 800;
+  z-index: 1001;
+  margin-bottom: -10px;
+}
+
+.home_experience p {
+  margin-top: -10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #56e2a4;
+  z-index: 1000;
+}
+
+.home_experience {
+  right: 10%;
+  bottom: 10%;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border: 2px solid #56e2a4;
+
+}
+
 /* ----Home End---  */
 /* -----Peoject ---  */
 .projects {
@@ -255,6 +269,7 @@ li {
   border-radius: 20px;
   background: #56e2a4;
 }
+
 /* ---About End--  */
 /* ---skills--- */
 .skills {
@@ -317,6 +332,7 @@ li {
   border-radius: 30px;
   padding: 10px;
 }
+
 /* ----Skill End--  */
 /* -----services----  */
 .services {
@@ -387,6 +403,7 @@ li {
   border-radius: 20px;
 
 }
+
 /* ---Service End--  */
 
 /* ------testimonials -----  */
@@ -480,6 +497,7 @@ li {
   font-size: 18px;
   margin-top: 10px;
 }
+
 /* ---Testimonial End ----  */
 /* ----contact---   */
 .contact {
@@ -720,4 +738,36 @@ li {
     width: 100%;
     margin-bottom: 20px;
   }
+  
+.home_experience h2 {
+  font-size:30px;
+  color: #56e2a4;
+  font-weight: 800;
+  z-index: 1001;
+  margin-bottom: -10px;
+}
+
+.home_experience p {
+  margin-top: 0px;
+  font-size: 8px;
+  font-weight: 600;
+  color: #56e2a4;
+  z-index: 1000;
+  margin-bottom: 0px;
+}
+
+.home_experience {
+  right: 2%;
+  bottom: 2%;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border: 2px solid #56e2a4;
+
+}
 }

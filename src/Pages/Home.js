@@ -5,7 +5,7 @@ const Home = () => {
     const data = UseContext();
     return (
         <motion.div
-            initial={{ opacity: 0, x: -50  }} // Initial state (invisible and moved up)
+            initial={{ opacity: 0, x: -50 }} // Initial state (invisible and moved up)
             animate={{ opacity: 1, x: 0 }} // Animate to visible and original position
             transition={{ duration: 1 }} // Animation duration
             className='home'
@@ -29,6 +29,16 @@ const Home = () => {
                     data && data.user.about.quote
                 }"
             </h5>
+            <span className='home_experience'>
+                <h2>
+                    {
+                        data && data.user.about.exp_year
+                    }
+                </h2>
+                <p>
+                    Year Experience
+                </p>
+            </span>
 
         </motion.div>
     )

@@ -40,7 +40,7 @@ function App() {
             transition={{ delay: 1.5, duration: 0.25 }}
             className='navbar'
           >
-              <Navbar />
+            <Navbar />
 
           </motion.div>
           <motion.div
@@ -49,7 +49,7 @@ function App() {
             transition={{ delay: 1.5, duration: 0.25 }}
             className='animation'
           >
-              <Animated />
+            <Animated />
 
           </motion.div>
           <div className='container'>
@@ -59,7 +59,7 @@ function App() {
               transition={{ delay: 1.5, duration: 0.25 }}
               className='side_conent_container_left'
             >
-                <Hero />
+              <Hero />
             </motion.div>
             <motion.div
               initial={{ scale: 0 }} // Initial state (invisible and moved up)
@@ -67,18 +67,18 @@ function App() {
               transition={{ delay: 1.5, duration: 0.25 }}
               className='side_content_container_right'
             >
-                <Routes>
-                  <Route path='/' element={<Home />} />
-                  <Route path='/navbar' element={<Navbar />} />
-                  <Route path='/project' element={<Projects />} />
-                  <Route path='/about' element={<About />} />
-                  <Route path='/skills' element={<Skills />} />
-                  <Route path='/services' element={<Services />} />
-                  <Route path='/testimonials' element={<Testimonials />} />
-                  <Route path='/contact' element={<Contact />} />
-                  {/* Define a default route for the root path */}
-                  <Route path='*' element={<Home />} />
-                </Routes>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/navbar' element={<Navbar />} />
+                <Route path='/project' element={<Projects />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/skills' element={<Skills />} />
+                <Route path='/services' element={<Services />} />
+                <Route path='/testimonials' element={<Testimonials />} />
+                <Route path='/contact' element={<Contact />} />
+                {/* Define a default route for the root path */}
+                <Route path='*' element={<Home />} />
+              </Routes>
 
             </motion.div>
           </div>

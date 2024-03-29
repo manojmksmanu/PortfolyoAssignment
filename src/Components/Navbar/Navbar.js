@@ -4,9 +4,6 @@ import { useState, useEffect } from "react";
 import { useAnimate, stagger, motion } from "framer-motion";
 import { Outlet, Link } from "react-router-dom";
 import { CgMenuRound } from "react-icons/cg";
-import { IoPersonSharp } from "react-icons/io5";
-import { FaHome } from "react-icons/fa";
-import { MdOutlineDesignServices } from "react-icons/md";
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [scope, animate] = useAnimate();
